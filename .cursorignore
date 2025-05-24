@@ -1,0 +1,35 @@
+# Ignore memory directory contents
+memory/*
+!memory/.gitkeep
+
+# Ignore resources directory contents
+resources/*
+!resources/.gitkeep
+
+# Ignore build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Ignore environment files
+.env
+.env.*
+venv/
+.venv/
+
+# Ignore large data files
+*.csv
+*.json
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore temporary files
+*.tmp
+*.temp
+.DS_Store 
