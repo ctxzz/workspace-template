@@ -1,7 +1,35 @@
-# Cursor Workspace
+# Cursor Workspace Template
 
 ## 概要
 このワークスペースは、Cursor IDEを使用したHuman-in-the-loopシステムを実装するための環境です。長期記憶を活用して、人間とAIの相互作用から学習し、再利用可能なタスクの知識ベースを構築します。
+
+## テンプレートの使用方法
+
+1. このリポジトリをテンプレートとして使用するには、GitHubの「Use this template」ボタンをクリックしてください
+2. 新しいリポジトリの名前と説明を入力してください
+3. 必要に応じて、リポジトリの可視性（Public/Private）を選択してください
+4. 「Create repository from template」をクリックして新しいリポジトリを作成してください
+
+## 初期設定
+
+1. リポジトリをクローンします：
+   ```bash
+   git clone <your-new-repository-url>
+   cd <your-repository-name>
+   ```
+
+2. 必要に応じて、以下のディレクトリにファイルを追加します：
+   - `memory/`: Cursorの長期記憶用
+   - `prompts/`: 手順書や指示書用
+   - `resources/`: 参照用ファイル用
+   - `src/`: 開発作業用
+
+3. 変更をコミットしてプッシュします：
+   ```bash
+   git add .
+   git commit -m "Initial setup"
+   git push
+   ```
 
 ## コアコンセプト
 
@@ -79,8 +107,6 @@
 4. 参照資料や静的アセットの保存に使用
 5. 整理された状態を維持し、適切に文書化する
 
-## 注意事項
+## ライセンス
 
-- 各ディレクトリの役割を理解し、適切な場所にファイルを配置してください
-- 定期的なメンテナンスと整理を心がけてください
-- 新しいガイドラインやルールは`.cursor/rules.mdc`に追加してください 
+このテンプレートはMITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルを参照してください。 
