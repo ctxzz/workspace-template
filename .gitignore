@@ -47,6 +47,8 @@ memory/*
 !memory/.gitkeep
 resources/*
 !resources/.gitkeep
+temp/*
+!temp/.gitkeep
 .env
 .env.local
 .env.*.local

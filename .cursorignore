@@ -6,6 +6,10 @@ memory/*
 resources/*
 !resources/.gitkeep
 
+# Ignore temp directory contents
+temp/*
+!temp/.gitkeep
+
 # Ignore build artifacts
 dist/
 build/

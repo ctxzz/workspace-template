@@ -20,6 +20,13 @@ This workspace is designed to implement a Human-in-the-loop system with Cursor I
 - Accumulation of knowledge from human interactions
 - Context preservation for future task execution
 
+### Temporary Memory
+- Short-term storage for ongoing tasks
+- Experimental and trial-and-error space
+- Pre-verification area before long-term storage
+- Context for current work session
+- Must be cleaned up after task completion
+
 ## Directory Structure
 
 ### memory/
@@ -27,6 +34,15 @@ This workspace is designed to implement a Human-in-the-loop system with Cursor I
 - Maintains context and history of successful interactions
 - Preserves learned patterns and solutions
 - Used for building a knowledge base of reusable tasks
+- Only verified and valuable information is stored here
+
+### temp/
+- Temporary storage for current work session
+- Experimental space for new tasks
+- Pre-verification area for memory candidates
+- Context for ongoing tasks
+- Must be cleaned up after task completion
+- No long-term storage of information
 
 ### prompts/
 - Contains procedural documents and instructions
@@ -75,6 +91,16 @@ This workspace is designed to implement a Human-in-the-loop system with Cursor I
 3. Regularly review and clean up outdated memories
 4. Use structured formats for memory storage
 5. Link related memories for better context preservation
+
+## Temporary Memory Management
+
+1. Use temp/ for ongoing work and experiments
+2. Clean up temp/ immediately after task completion
+3. Move only verified and valuable information to memory/
+4. Delete all temporary files after successful migration to memory/
+5. Never use temp/ for long-term storage
+6. Keep temp/ organized during active use
+7. Document the migration process from temp/ to memory/
 
 ## Resources Directory Rules
 
